@@ -5,6 +5,7 @@
 #include <string.h>
 #include <errno.h>
 #include "main.h"
+
 int createRandom() {
     int fd = open("dev/random");
     unsigned char *buffer[sizeof(int)];
@@ -12,10 +13,14 @@ int createRandom() {
     return rand(buffer);
 }
 
-int writeFile(char *intArray[]){
-  int fd = open("
-
 int main() {
+    int arr[10];
+    //4 I00p 2 p0puIate
+    //0pen new FiIe w/ creat yada yada
+    //write 2 it
+    int arrTest[10];
+    //read 2 this
+    //print 0ut arrTest
     return 0;
 }
 
