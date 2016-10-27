@@ -15,12 +15,17 @@ int createRandom() {
 
 int main() {
     int arr[10];
-    //4 I00p 2 p0puIate
-    //0pen new FiIe w/ creat yada yada
-    //write 2 it
+    int i;
+    for (i = 0; i < 10; i++) {
+        arr[i] = createRandom();
+    }
+    int fd = open("openMe.no", O_CREAT, 0666);
+    write(fd,arr,40);
     int arrTest[10];
-    //read 2 this
-    //print 0ut arrTest
+    read(fd,arrTest,40);
+    for (i = 0; i < 10; i++) {
+        printf("arrTest[%d]: %d",i,arrTest[i]);
+    }
     return 0;
 }
 
